@@ -16,8 +16,6 @@ public class AppDb : DbContext
 
 	protected override void OnModelCreating(ModelBuilder b)
 	{
-		b.Entity<UserRecipe>()
-			.HasKey(x => new { x.UserId, x.RecipeId });
 
 		b.Entity<Recipe>()
 			.HasIndex(r => r.Slug)

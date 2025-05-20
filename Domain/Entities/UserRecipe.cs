@@ -1,6 +1,8 @@
-﻿namespace WeCoockedChat.Domain.Entities
+﻿using WeCoockedChat.Domain.Common;
+
+namespace WeCoockedChat.Domain.Entities
 {
-	public class UserRecipe
+	public class UserRecipe : EntityBase
 	{
 		public Guid UserId { get; set; }
 		public int RecipeId { get; set; }

@@ -1,6 +1,8 @@
-﻿namespace WeCoockedChat.Domain.Entities
+﻿using WeCoockedChat.Domain.Common;
+
+namespace WeCoockedChat.Domain.Entities
 {
-	public class Recipe
+	public class Recipe : EntityBase
 	{
 
 		public string Slug { get; set; } = null!;

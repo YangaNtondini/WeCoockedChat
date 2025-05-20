@@ -3,6 +3,7 @@ namespace WeCoockedChat.Domain.Common
 {
 	public class EntityBase
 	{
+		[Key]
 		public int Id { get; set; }
 
 		public int Rev { get; set; } = 1;
